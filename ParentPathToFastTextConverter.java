@@ -3,6 +3,22 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
+        // took this from https://github.com/deeplearning4j/dl4j-examples/blob/master/dl4j-examples/src/main/java/org/deeplearning4j/examples/dataexamples/ImagePipelineExample.java
+        // DIRECTORY STRUCTURE:
+        //Images in the dataset have to be organized in directories by class/label.
+        //In this example there are ten images in three classes
+        //Here is the directory structure
+        //                                    parentDir
+        //                                  /    |     \
+        //                                 /     |      \
+        //                            labelA  labelB   labelC
+        //
+        //Set your data up like this so that labels from each label/class live in their own directory
+        //And these label/class directories live together in the parent directory
+
+        // fasttext format: __LABEL__<CLASS> <one line of data>
+        // fasttext format: __LABEL__<CLASS> <one line of data>
+
 public class ParentPathToFastTextConverter {
       public static void main(String[] args) throws IOException {
         File parentDirectory = new File("<path to your train folder>/train");
