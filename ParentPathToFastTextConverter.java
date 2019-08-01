@@ -3,10 +3,9 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-        // took this from https://github.com/deeplearning4j/dl4j-examples/blob/master/dl4j-examples/src/main/java/org/deeplearning4j/examples/dataexamples/ImagePipelineExample.java
+        // took these comments from https://github.com/deeplearning4j/dl4j-examples/blob/master/dl4j-examples/src/main/java/org/deeplearning4j/examples/dataexamples/ImagePipelineExample.java
         // DIRECTORY STRUCTURE:
         //Images in the dataset have to be organized in directories by class/label.
-        //In this example there are ten images in three classes
         //Here is the directory structure
         //                                    parentDir
         //                                  /    |     \
